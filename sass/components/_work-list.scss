@@ -1,0 +1,50 @@
+.section {
+    & .name {
+    @extend %list;
+    color:$title-text-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-bottom: 50px;
+
+    & .title {
+        @extend %list;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        color: $white-color;
+        background-color: $background-section;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 27px;
+        padding-bottom: 27px;
+    }
+      }
+    
+}
+.work-list{
+    @extend %list;
+    @include centeredFlex ($justify-content:space-between);
+  
+  & .link {
+    display: block;
+   }
+   & img {
+    display: block;
+    max-width: 100%;
+    height: auto;   
+   }
+}
+
+.work-list .item {
+    margin-right: 30px;
+    position: relative;
+
+& :last-child {
+    margin-right: 0px;
+    }
+  }

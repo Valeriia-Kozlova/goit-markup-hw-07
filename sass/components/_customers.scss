@@ -1,0 +1,44 @@
+.customers {
+
+    & .name {
+        @extend %list;
+        color:$title-text-color;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        margin-bottom: 50px;  
+    }
+}
+    .customers-list {
+        @extend %list;
+        @include centeredFlex ($justify-content: space-between);
+    
+        & .item {
+            margin-right: 30px;    
+        }
+
+        & .item:last-child {
+            margin-right: 0px;    
+        }
+
+        & .link {
+        display: block; 
+     }
+    }
+
+.customers-container {
+  @include centeredFlex ();
+  width: 170px;
+  height: 90px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  fill: #AFB1B8;
+  @include cubic (fill);
+  @include cubic (border);
+
+  &:hover {
+    border: 1px solid $accent-color;
+    fill: $accent-color;
+  }
+}

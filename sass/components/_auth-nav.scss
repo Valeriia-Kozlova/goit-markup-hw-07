@@ -1,0 +1,30 @@
+.auth-nav {
+    @extend %list;
+    @include centeredFlex ();
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+ .item + .item {
+    margin-left: 30px;
+ }   
+  }
+  .auth-nav .link {
+    @include centeredFlex ();
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $primary-text-color;
+    text-decoration: none;
+    @include cubic (color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color; 
+  }
+}
+.icon-envelope,
+.icon-phone {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  

@@ -8,6 +8,8 @@ $background-footer: #2f303a;
 $background-section: rgba(47, 48, 58, 0.8);
 $background-advantages: #f5f4fa;
 $transition-duration: 250ms;
+$transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 
 body {
   background-color: $white-color;

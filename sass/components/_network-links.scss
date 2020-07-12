@@ -1,0 +1,34 @@
+.networks {
+    @extend %list;
+    @include centeredFlex ();
+
+    & .network-item {
+        margin-right: 10px;
+        margin-bottom: 24px;  
+    }
+
+    & .network-item:last-child {
+        margin-right: 0px;
+    } 
+    & .network-item h3,
+    & .network-item p {
+        @extend %list;
+    }
+}
+.network-link {
+    @include centeredFlex ();
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $white-color;
+    fill: #AFB1B8;
+    @include cubic (background-color);
+    @include cubic (fill);
+   
+
+     &:hover,
+     &:focus {
+        background-color: $accent-color;
+        fill: $white-color;  
+    }
+}

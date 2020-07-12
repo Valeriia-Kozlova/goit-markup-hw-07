@@ -1,0 +1,9 @@
+.header {
+  @include centeredFlex($justify-content: space-between);
+}
+.main-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  

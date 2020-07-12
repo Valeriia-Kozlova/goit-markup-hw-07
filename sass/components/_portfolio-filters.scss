@@ -1,0 +1,44 @@
+.main {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    border: 1px solid #ECECEC;
+  }
+  .filters {
+      @extend %list;
+      @include centeredFlex ();
+      margin-bottom:50px;
+
+      & li:not(:last-child) {
+        margin-right: 8px;  
+      }
+  }
+  .portfolio h1 {
+      @extend %list;
+  }
+
+  .button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 6px 22px;
+    
+    border-radius: 4px;
+    border-style: none;
+    background-color:$background-color;
+    cursor: pointer;
+    @include cubic(color);
+    @include cubic (background-color);
+
+    .filters &:hover,
+    .filters &:focus {
+        background-color:$accent-color;
+        color: $white-color;  
+    }
+    .filters &.current {
+        background-color:$accent-color;
+        color: $white-color;
+        cursor: pointer;
+    }
+  }

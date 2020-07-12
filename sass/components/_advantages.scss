@@ -1,0 +1,63 @@
+.box {
+    padding-top: 94px;
+    padding-bottom: 93px;
+  }
+  .border {
+    border-bottom: 1px solid #ECECEC;
+  }
+  
+  .advantages {
+    @include centeredFlex ($justify-content: space-between);
+
+    & > .item {
+        margin-right: 30px;
+        width: 270px;
+      }
+
+    & > .item:last-child {
+        margin-right: 0px;   
+      } 
+
+  }
+  .advantages .link {
+    display: block;
+    margin-bottom: 30px;
+    /*background: var(--background-advantages);*/
+    border-radius: 4px;
+    height: 120px;
+
+      &::before {
+    display: block;
+    content: "";
+    height: 120px;
+    /*background-image: url(../images/group.svg);*/
+    background-color:$background-advantages;
+    background-repeat: no-repeat;
+    background-position: center;   
+    }
+  }
+  .advantages-icon {
+    @include centeredFlex ()
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background: $background-color;
+  }
+  
+.advantages {
+    & h3 {
+  @extend %list;
+  color:$title-text-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+    }
+    & p {
+  @extend %list;
+  font-size: 14px;
+  line-height: 1.71;      
+    }
+}

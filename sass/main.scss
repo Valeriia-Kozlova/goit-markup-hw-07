@@ -2,7 +2,17 @@
 @import "./utils/placeholders";
 @import "./utils/mixins";
 @import "./components/page-header";
+@import "./components/site-nav";
 @import "./components/logo";
-p {
-  background-color: $accent-color;
-}
+@import "./components/auth-nav";
+@import "./components/hero";
+@import "./components/button";
+@import "./components/modal";
+@import "./components/advantages";
+@import "./components/work-list";
+@import "./components/command";
+@import "./components/network-links";
+@import "./components/customers";
+@import "./components/footer";
+@import "./components/portfolio-filters";
+@import "./components/portfolioExamplesWorks";
